@@ -31,3 +31,7 @@ Route::get('tasks/create', 'TasksController@create')->name('tasks.create');
 // edit: 更新用のフォームページ
 Route::get('tasks/{id}/edit', 'TasksController@edit')->name('tasks.edit');
 */
+
+// ユーザ登録
+Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup.get');
+Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');

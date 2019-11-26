@@ -9,9 +9,11 @@
         <div class="collapse navbar-collapse" id="nav-bar">
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
+                <!--new start-->
                 <li class="nav-item">{!! link_to_route('tasks.create', '新規の投稿', [], ['class' => 'nav-link']) !!}</li>
-                <li class="nav-item"><a href="#" class="nav-link">Signup</a></li> <!--new-->
-                <li class="nav-item"><a href="#" class="nav-link">Login</a></li>  <!--new-->
+                <li>{!! link_to_route('signup.get', 'Signup', [], ['class' => 'nav-link']) !!}</li>
+                <li><a href="#">Login</a></li>
+                <!-- new end-->
             </ul>
         </div>
     </nav>

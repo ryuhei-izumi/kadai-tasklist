@@ -1,3 +1,5 @@
+<script type="text/javascript" src="">
+/*
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -93,3 +95,15 @@
         </div>
     </body>
 </html>
+*/
+</script>
+@extends('layouts.app')
+
+@section('content')
+    <div class="center jumbotron">
+        <div class="text-center">
+            <h1>Welcome to the TaskList</h1>
+            {!! link_to_route('signup.get', 'Sign up now!', [], ['class' => 'btn btn-lg btn-primary']) !!}
+        </div>
+    </div>
+@endsection
